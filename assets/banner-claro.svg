@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="esqueleto de governança: programa de governança e SGSI pronto para implantar">
+<rect width="1280" height="420" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#00ADE8"/>
+<text x="72" y="96" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" letter-spacing="3" fill="#006A8F">PROGRAMA DE GOVERNANÇA · ISO/IEC 27001 · LGPD</text>
+<text x="70" y="178" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="64" font-weight="600" letter-spacing="-1.5" fill="#0F172A">esqueleto de</text>
+<text x="70" y="252" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="64" font-weight="600" letter-spacing="-1.5" fill="#0F172A">governança<tspan fill="#00ADE8">.</tspan></text>
+<text x="72" y="306" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="21" fill="#334155">Normas coesas, parametrizadas por entrevista,</text>
+<text x="72" y="336" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="21" fill="#334155">prontas para aprovar em dias, não em meses.</text>
+<text x="72" y="384" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" fill="#475569">por ness<tspan fill="#00ADE8">.</tspan></text>
+<rect x="760" y="70" width="218" height="62" fill="#00ADE8" stroke="#E2E8F0"/>
+<text x="774" y="96" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#04121C">Política</text>
+<text x="774" y="116" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#04121C">pilar · o porquê</text>
+<rect x="992" y="70" width="218" height="62" fill="#00ADE8" stroke="#E2E8F0"/>
+<text x="1006" y="96" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#04121C">Governança e riscos</text>
+<text x="1006" y="116" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#04121C">pilar · quem decide</text>
+<rect x="760.0" y="150" width="83.6" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="774.0" y="176" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Ética</text>
+<rect x="851.6" y="150" width="83.6" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="865.6" y="176" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Acesso</text>
+<rect x="943.2" y="150" width="83.6" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="957.2" y="176" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Terceiros</text>
+<rect x="1034.8" y="150" width="83.6" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1048.8" y="176" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Pessoas</text>
+<rect x="1126.4" y="150" width="83.6" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1140.4" y="176" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Guia</text>
+<rect x="760.0" y="212" width="144.66666666666666" height="56" fill="none" stroke="#006A8F" stroke-dasharray="5 4"/>
+<text x="772.0" y="236" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Desenvolvimento</text>
+<text x="772.0" y="256" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#006A8F">módulo</text>
+<rect x="912.6666666666666" y="212" width="144.66666666666666" height="56" fill="none" stroke="#006A8F" stroke-dasharray="5 4"/>
+<text x="924.6666666666666" y="236" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Serviço ao cliente</text>
+<text x="924.6666666666666" y="256" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#006A8F">módulo</text>
+<rect x="1065.3333333333333" y="212" width="144.66666666666666" height="56" fill="none" stroke="#006A8F" stroke-dasharray="5 4"/>
+<text x="1077.3333333333333" y="236" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Continuidade</text>
+<text x="1077.3333333333333" y="256" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#006A8F">módulo</text>
+<rect x="760" y="286" width="450" height="44" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="774" y="312" font-family="Montserrat, 'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Procedimentos · modelos · registro de decisões</text>
+<text x="760" y="366" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#475569">config/empresa.yaml  →  entrevista  →  PDF · Word · HTML</text>
+</svg>

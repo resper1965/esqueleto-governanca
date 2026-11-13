@@ -1,0 +1,25 @@
+name: Problema
+description: Erro em norma, gerador ou conferência
+labels: [problema]
+body:
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde
+      options: [Norma, Procedimento, Modelo de planilha, Gerador, Conferência de coesão, Entrevista, Documentação]
+    validations: { required: true }
+  - type: input
+    id: local
+    attributes:
+      label: Documento e seção
+      placeholder: "Acesso e ativos, seção 3.2"
+  - type: textarea
+    id: o-que
+    attributes:
+      label: O que acontece e qual o efeito
+      description: Diga a consequência. Sem dado real de empresa.
+    validations: { required: true }
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer

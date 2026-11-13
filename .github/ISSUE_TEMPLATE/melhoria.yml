@@ -1,0 +1,27 @@
+name: Melhoria
+description: Regra, parâmetro ou cobertura que falta no modelo
+labels: [melhoria]
+body:
+  - type: textarea
+    id: necessidade
+    attributes:
+      label: Necessidade
+      description: Que situação de uma empresa do perfil o modelo não resolve hoje?
+    validations: { required: true }
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta e recomendação padrão
+      description: Onde a regra moraria e qual o valor padrão, com o motivo.
+  - type: input
+    id: anexo-a
+    attributes:
+      label: Controle do Anexo A relacionado
+      placeholder: "8.12"
+  - type: checkboxes
+    id: unicidade
+    attributes:
+      label: Conferência
+      options:
+        - label: Verifiquei que a regra não existe em outra norma
+          required: true
