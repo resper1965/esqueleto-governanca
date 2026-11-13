@@ -1,6 +1,6 @@
 # Como contribuir
 
-O modelo é mantido pela NESS. Contribuições vêm de consultores e de empresas que usam o esqueleto: melhoria que vale
+Contribuições vêm de consultores e de empresas que usam o esqueleto: melhoria que vale
 para todos entra aqui; o que é de uma empresa só fica em `config/` e `acrescimos/` do repositório dela.
 
 ## Antes de abrir uma PR

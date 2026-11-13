@@ -32,7 +32,7 @@ flowchart TB
     G --> O["emitidos/<br/>HTML A4 · PDF · Word"]
     G --> K{"coesao"}
 
-    style G fill:#00ADE8,stroke:#00ADE8,color:#04121C
+    style G fill:#2563EB,stroke:#2563EB,color:#FFFFFF
 ```
 
 A separação é o centro do desenho: **o modelo é dono do texto, a empresa é dona da configuração**. Por isso a
@@ -99,7 +99,7 @@ flowchart LR
     D --> E["Acrescenta item em<br/>Pontos a decidir"]
     B -- "sem valor e<br/>sem padrão" --> X["Erro na conferência"]
 
-    style X fill:#0B1326,stroke:#0B1326,color:#F1F5F9
+    style X fill:#1E293B,stroke:#1E293B,color:#F8FAFC
 ```
 
 A emissão nunca para por falta de resposta e nunca inventa: o que não foi decidido sai com a recomendação e com o aviso.
@@ -133,8 +133,7 @@ sequenceDiagram
 
 ## Conferência de coesão
 
-`ferramentas/coesao` reprova a PR que quebrar qualquer regra abaixo. É a mesma conferência que roda no acervo de
-origem, com zero problemas como condição de merge.
+`ferramentas/coesao` reprova a PR que quebrar qualquer regra abaixo. Zero problemas é condição de merge.
 
 | Regra | O que reprova |
 | --- | --- |
@@ -158,7 +157,7 @@ flowchart LR
     C -- falha --> R["PR bloqueada"]
     M --> V["Tag SemVer"] --> PUB["PDFs anexados<br/>à versão"]
 
-    style M fill:#00ADE8,stroke:#00ADE8,color:#04121C
+    style M fill:#2563EB,stroke:#2563EB,color:#FFFFFF
 ```
 
 No repositório do cliente, a mesma conferência roda com o `config/empresa.yaml` dele.

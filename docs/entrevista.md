@@ -24,8 +24,8 @@ flowchart LR
     G --> H["8 · Prazos"]
     H --> I["9 · Identidade<br/>visual"]
 
-    style C fill:#00ADE8,stroke:#00ADE8,color:#04121C
-    style E fill:#00ADE8,stroke:#00ADE8,color:#04121C
+    style C fill:#2563EB,stroke:#2563EB,color:#FFFFFF
+    style E fill:#2563EB,stroke:#2563EB,color:#FFFFFF
 ```
 
 Os blocos 3 e 5 concentram as decisões de segregação de funções; a skill pede confirmação explícita neles.

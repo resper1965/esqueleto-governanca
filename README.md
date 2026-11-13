@@ -4,11 +4,11 @@
 </picture>
 
 <p align="center">
-  <img alt="Estado: especificação" src="https://img.shields.io/badge/estado-especifica%C3%A7%C3%A3o-00ADE8?style=flat-square">
-  <img alt="ISO/IEC 27001:2022" src="https://img.shields.io/badge/ISO%2FIEC-27001%3A2022-0B1326?style=flat-square">
-  <img alt="ISO 31000" src="https://img.shields.io/badge/riscos-ISO%2031000-0B1326?style=flat-square">
-  <img alt="LGPD" src="https://img.shields.io/badge/privacidade-LGPD-0B1326?style=flat-square">
-  <img alt="Idioma" src="https://img.shields.io/badge/idioma-pt--BR-0B1326?style=flat-square">
+  <img alt="Estado: especificação" src="https://img.shields.io/badge/estado-especifica%C3%A7%C3%A3o-2563EB?style=flat-square">
+  <img alt="ISO/IEC 27001:2022" src="https://img.shields.io/badge/ISO%2FIEC-27001%3A2022-1E293B?style=flat-square">
+  <img alt="ISO 31000" src="https://img.shields.io/badge/riscos-ISO%2031000-1E293B?style=flat-square">
+  <img alt="LGPD" src="https://img.shields.io/badge/privacidade-LGPD-1E293B?style=flat-square">
+  <img alt="Idioma" src="https://img.shields.io/badge/idioma-pt--BR-1E293B?style=flat-square">
   <img alt="Uso restrito" src="https://img.shields.io/badge/licen%C3%A7a-uso%20restrito-475569?style=flat-square">
 </p>
 
@@ -29,9 +29,8 @@ contradizem na terceira página. Este repositório faz o contrário: **um acervo
 em que cada regra mora num lugar só, cada decisão tem dono e data, e o que é específico da empresa vive num único
 arquivo de configuração.
 
-É o mesmo acervo que a NESS escreveu e usa para governar a própria operação (dez normas, todo o Anexo A da
-ISO/IEC 27001:2022 mapeado), generalizado para **empresas de tecnologia e desenvolvimento de software**, de pequeno e
-médio porte, em que as funções executivas se acumulam e o programa precisa caber na rotina.
+É uma ferramenta genérica, feita a partir de um acervo real em uso (dez normas, o Anexo A da ISO/IEC 27001:2022
+mapeado), para **empresas de tecnologia e desenvolvimento de software**, de pequeno e médio porte, em que as funções executivas se acumulam e o programa precisa caber na rotina.
 
 > [!NOTE]
 > **Estado atual:** especificação aprovada para revisão; a implementação começa pelo [roteiro](#roteiro). Os comandos
@@ -50,8 +49,8 @@ flowchart LR
     F --> G["Emissão<br/>PDF · Word · HTML A4"]
     G --> H["Manutenção<br/>git merge do modelo"]
 
-    style B fill:#00ADE8,stroke:#00ADE8,color:#04121C
-    style E fill:#0B1326,stroke:#0B1326,color:#F1F5F9
+    style B fill:#2563EB,stroke:#2563EB,color:#FFFFFF
+    style E fill:#1E293B,stroke:#1E293B,color:#F8FAFC
 ```
 
 1. **O texto é fixo; a empresa é configuração.** As normas trazem marcadores (`{{alcadas.cfo}}`) e trechos por módulo.
@@ -161,10 +160,10 @@ O conteúdo nunca muda com o tema: só a aparência. Detalhes, tokens aceitos e 
 
 - [x] Especificação
 - [x] Documentação do repositório
-- [ ] Gerador e conferência de coesão portados do acervo de origem
+- [ ] Gerador e conferência de coesão a partir do acervo de referência
 - [ ] Normas do núcleo generalizadas, com marcadores
 - [ ] Módulos: desenvolvimento, serviço ao cliente, continuidade
-- [ ] Cobertura completa do Anexo A (hoje 81 de 93 controles no acervo de origem; [lista](docs/normas.md#cobertura-do-anexo-a))
+- [ ] Cobertura completa do Anexo A (hoje 81 de 93 controles no acervo de referência; [lista](docs/normas.md#cobertura-do-anexo-a))
 - [ ] `config/empresa.yaml`: esquema, valores padrão e empresa exemplo
 - [ ] Procedimentos e planilhas-modelo
 - [ ] Skill de entrevista
@@ -204,6 +203,6 @@ indicado. Melhoria que vale para todos vira PR no modelo.
 ---
 
 <p align="center">
-  <sub>Feito pela <strong>NESS</strong> a partir do acervo de normas que governa a própria operação ·
+  <sub>Ferramenta genérica de programa de governança ·
   <a href="CONTRIBUTING.md">Como contribuir</a> · <a href="SECURITY.md">Segurança</a> · <a href="LICENSE">Uso restrito</a></sub>
 </p>

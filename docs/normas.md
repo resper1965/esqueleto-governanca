@@ -19,29 +19,26 @@ flowchart TB
     GOV -.-> CO["Incidentes e continuidade"]
     ET & AC & FO & PE & DE & SC & CO --> PR["Procedimentos · modelos · registro de decisões"]
 
-    style POL fill:#00ADE8,stroke:#00ADE8,color:#04121C
-    style GOV fill:#00ADE8,stroke:#00ADE8,color:#04121C
+    style POL fill:#2563EB,stroke:#2563EB,color:#FFFFFF
+    style GOV fill:#2563EB,stroke:#2563EB,color:#FFFFFF
 ```
 
 Linha cheia: núcleo, presente em toda implantação. Linha tracejada: módulo, escolhido na entrevista.
 
 ## Catálogo
 
-| Documento | Conjunto | Origem | Decide | Principais parâmetros |
-| --- | --- | --- | --- | --- |
-| Política de segurança e privacidade | Pilar | NOR-001 | Compromisso da direção, princípios, classificação, estrutura documental | `empresa`, `cargos.ceo` |
-| Governança e gestão de riscos | Pilar | NOR-010 | Papéis de decisão, alçadas, comitês, método de risco, exceções, auditoria interna | `cargos`, `instancias`, `alcadas`, `risco` |
-| Ética e conduta | Núcleo | NOR-002 | Integridade, conflito de interesse, canal de relato, diversidade | `ferramentas.canal_relato` |
-| Acesso e ativos | Núcleo | NOR-003 | Ciclo de acesso, inventário, criptografia, redes | `prazos.revisao_acessos`, `ferramentas.identidade` |
-| Fornecedores e terceiros | Núcleo | NOR-006 | Criticidade, avaliação, cláusulas, reavaliação | `alcadas.contratacao` |
-| Pessoas | Núcleo | NOR-007 | Entrada, saída, termos, conscientização, disciplinar | `prazos`, `cargos` |
-| Guia do colaborador | Núcleo | NOR-008 | O dia a dia em linguagem simples; aponta para as normas | — |
-| Desenvolvimento seguro, mudanças e projetos | Módulo | NOR-005 | Ciclo seguro, GMUD, vulnerabilidades, projetos | `prazos.vulnerabilidade_critica_dias`, `instancias.comite_mudancas` |
-| Serviço ao cliente | Módulo | NOR-009 | Ativos e dados de cliente, acordo de segurança, notificação | `prazos.notificacao_incidente_horas` |
-| Incidentes e continuidade | Módulo | NOR-004 | Resposta, comunicação, evidências, backup, RTO e RPO | `instancias.comite_crise` |
-
-A coluna *Origem* indica a norma da NESS de que cada documento deriva. A extração remove nomes, marcas, ferramentas
-internas e conteúdo específico de segurança gerenciada; mantém estrutura, glossário e unicidade.
+| Documento | Conjunto | Decide | Principais parâmetros |
+| --- | --- | --- | --- |
+| Política de segurança e privacidade | Pilar | Compromisso da direção, princípios, classificação, estrutura documental | `empresa`, `cargos.ceo` |
+| Governança e gestão de riscos | Pilar | Papéis de decisão, alçadas, comitês, método de risco, exceções, auditoria interna | `cargos`, `instancias`, `alcadas`, `risco` |
+| Ética e conduta | Núcleo | Integridade, conflito de interesse, canal de relato, diversidade | `ferramentas.canal_relato` |
+| Acesso e ativos | Núcleo | Ciclo de acesso, inventário, criptografia, redes | `prazos.revisao_acessos`, `ferramentas.identidade` |
+| Fornecedores e terceiros | Núcleo | Criticidade, avaliação, cláusulas, reavaliação | `alcadas.contratacao` |
+| Pessoas | Núcleo | Entrada, saída, termos, conscientização, disciplinar | `prazos`, `cargos` |
+| Guia do colaborador | Núcleo | O dia a dia em linguagem simples; aponta para as normas | — |
+| Desenvolvimento seguro, mudanças e projetos | Módulo | Ciclo seguro, GMUD, vulnerabilidades, projetos | `prazos.vulnerabilidade_critica_dias`, `instancias.comite_mudancas` |
+| Serviço ao cliente | Módulo | Ativos e dados de cliente, acordo de segurança, notificação | `prazos.notificacao_incidente_horas` |
+| Incidentes e continuidade | Módulo | Resposta, comunicação, evidências, backup, RTO e RPO | `instancias.comite_crise` |
 
 ## Fluxos que acompanham as normas
 
@@ -58,7 +55,7 @@ Cada norma traz o fluxo principal desenhado em SVG, no texto:
 
 ## Cobertura do Anexo A
 
-Medida no acervo de origem (registro de controles da NESS). Um controle conta como coberto quando ao menos uma seção de
+Medida no acervo de referência a partir do qual o modelo é generalizado. Um controle conta como coberto quando ao menos uma seção de
 norma o trata.
 
 | Tema do Anexo A | Controles | Cobertos | Pendentes |
@@ -70,7 +67,7 @@ norma o trata.
 | **Total** | **93** | **81** | **12** |
 
 ```mermaid
-pie showData title Controles do Anexo A no acervo de origem
+pie showData title Controles do Anexo A no acervo de referência
     "Cobertos" : 81
     "No roteiro" : 12
 ```

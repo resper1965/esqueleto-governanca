@@ -2,8 +2,8 @@
 
 ## Objetivo
 
-Transformar o acervo de normas da NESS (repositório ness-knowledge, pasta 07-normas) num **esqueleto replicável** para implantar programas de governança e
-SGSI em empresas de perfil correlato ao da NESS: tecnologia e desenvolvimento de software, porte pequeno a médio, funções
+Uma ferramenta genérica e **replicável** para implantar programas de governança e SGSI em empresas de
+tecnologia e desenvolvimento de software, porte pequeno a médio, funções
 executivas acumuladas. A implantação entrega documentos coesos e prontos para aprovação em dias, com as decisões de
 calibragem feitas por entrevista.
 
@@ -11,18 +11,18 @@ calibragem feitas por entrevista.
 
 | Tema | Decisão |
 | --- | --- |
-| Público | Empresas correlatas à NESS, de tecnologia e software; não necessariamente de segurança |
+| Público | Empresas de tecnologia e software; não necessariamente de segurança |
 | Onde o programa roda | Só documentos; o cliente opera com as próprias ferramentas |
 | Formato de entrega | Um repositório Git por cliente, com o gerador e a conferência de coesão |
-| Entrevista | Skill de entrevista no repositório; consultor da NESS ou da trustness. valida antes da primeira emissão |
-| Acervo da NESS | Continua como está; o esqueleto é extraído dele e não o substitui |
+| Entrevista | Skill de entrevista no repositório; um consultor valida antes da primeira emissão |
+| Origem do texto | Acervo real em uso, generalizado: sem nomes, marcas, ferramentas ou decisões de uma empresa |
 
 ## Fora do escopo
 
 - Operação do programa (registro de riscos, revisão de acessos e indicadores em sistema): o cliente usa as ferramentas
   dele; o esqueleto entrega modelos de planilha.
-- Integração com o painel e o ness.brain da NESS, e com o niso.
-- Declaração de Aplicabilidade (SoA): entra numa versão posterior, depois que a da NESS estiver fechada.
+- Integração com sistemas de gestão de terceiros (GRC, painéis, ITSM).
+- Declaração de Aplicabilidade (SoA): entra numa versão posterior.
 - Preço e forma de venda da oferta (decisão comercial).
 
 ## 1. Repositório modelo
@@ -44,15 +44,14 @@ exemplo/nclient.yaml     empresa fictícia usada nos testes do modelo
 
 ### Normas
 
-| Conjunto | Documentos (origem no acervo NESS) |
+| Conjunto | Documentos |
 | --- | --- |
-| Núcleo (sempre) | Política de segurança e privacidade (NOR-001), Governança e riscos (NOR-010), Ética e conduta (NOR-002), Acesso e ativos (NOR-003), Fornecedores (NOR-006), Pessoas (NOR-007), Guia do colaborador (NOR-008) |
-| Módulo desenvolvimento | Desenvolvimento seguro, mudanças e projetos (NOR-005) |
-| Módulo serviço ao cliente | Ativos e dados de clientes (NOR-009), sem o conteúdo específico de segurança gerenciada (SOC, firewall como serviço, cadeia de custódia forense) |
-| Módulo continuidade | Incidentes e continuidade (NOR-004), sem a dependência de SOC |
+| Núcleo (sempre) | Política de segurança e privacidade, Governança e riscos, Ética e conduta, Acesso e ativos, Fornecedores, Pessoas, Guia do colaborador |
+| Módulo desenvolvimento | Desenvolvimento seguro, mudanças e projetos |
+| Módulo serviço ao cliente | Ativos e dados de clientes, sem o conteúdo específico de segurança gerenciada (SOC, firewall como serviço, cadeia de custódia forense) |
+| Módulo continuidade | Incidentes e continuidade, sem a dependência de SOC |
 
-A extração remove o que é da NESS: nomes, marcas, ferramentas, painel, ness.brain, decisões datadas e referências ao
-n.secops. A estrutura, o glossário, a tabela de unicidade e a hierarquia documental (política e governança como pilares)
+A generalização remove o que é de uma empresa: nomes, marcas, ferramentas internas e decisões datadas. A estrutura, o glossário, a tabela de unicidade e a hierarquia documental (política e governança como pilares)
 são mantidos.
 
 ## 2. Parametrização
@@ -65,8 +64,8 @@ são mantidos.
   faturamento, tolerância e apetite, ferramentas por finalidade, prazos (revisão de acessos, retenção, correção de
   vulnerabilidades, notificação de incidente) e identidade visual (logotipo, cor de destaque, fontes).
 - **Parâmetro sem resposta não bloqueia a emissão:** o trecho sai com a recomendação padrão e o item entra
-  automaticamente em "Pontos a decidir" da norma, com a recomendação. A recomendação padrão vem da calibragem da NESS,
-  revisada para o perfil de empresa de tecnologia.
+  automaticamente em "Pontos a decidir" da norma, com a recomendação. A recomendação padrão vem da calibragem do acervo
+  de referência, revisada para o perfil de empresa de tecnologia.
 - Texto próprio do cliente entra em `acrescimos/<norma>.md`, renderizado ao fim da seção indicada, sem tocar no texto
   fixo.
 
@@ -93,7 +92,7 @@ Skill `entrevista-governanca` no repositório, conduzida com o cliente (ou pelo 
 
 ## 5. Qualidade
 
-- `ferramentas/coesao` (derivada da conferência de coesão das normas da NESS): glossário, estrutura padrão, pessoas só no Anexo A,
+- `ferramentas/coesao`: glossário, estrutura padrão, pessoas só no Anexo A,
   pontos a decidir com recomendação, exceções pelo processo, **nenhum marcador sem valor nem sem recomendação padrão**.
 - CI do modelo: gera todas as normas para `exemplo/nclient.yaml` com todos os módulos e com só o núcleo; falha com
   marcador sem resolução, coesão diferente de zero, link quebrado ou tabela partida.
@@ -107,4 +106,4 @@ Skill `entrevista-governanca` no repositório, conduzida com o cliente (ou pelo 
 4. Procedimentos e modelos de planilha.
 5. Skill de entrevista.
 6. Conferência de coesão adaptada e CI.
-7. Piloto com uma empresa real do perfil, escolhida pelo CEO.
+7. Piloto com uma empresa real do perfil.

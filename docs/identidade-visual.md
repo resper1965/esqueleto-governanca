@@ -19,7 +19,7 @@ flowchart TB
     N --> G
     G --> O["PDF · Word · HTML"]
 
-    style G fill:#00ADE8,stroke:#00ADE8,color:#04121C
+    style G fill:#2563EB,stroke:#2563EB,color:#FFFFFF
 ```
 
 Precedência: tema completo > básico > padrão neutro. Um token que o seu tema não define vem do nível de baixo.
@@ -76,9 +76,9 @@ Exemplo em `tema.css`:
 
 ```css
 :root {
-  --cor-destaque: #00ADE8;
-  --cor-destaque-texto: #006A8F;
-  --cor-sobre-destaque: #04121C;
+  --cor-destaque: #0F766E;
+  --cor-destaque-texto: #115E59;
+  --cor-sobre-destaque: #FFFFFF;
   --fonte-titulos: "Montserrat";
   --fonte-texto: "Inter";
   --raio: 0;
@@ -89,8 +89,8 @@ Exemplo em `tokens.json` com nomes do seu design system mapeados:
 
 ```json
 {
-  "brand": { "primary": { "$type": "color", "$value": "#00ADE8" } },
-  "text":  { "link":    { "$type": "color", "$value": "#006A8F" } }
+  "brand": { "primary": { "$type": "color", "$value": "#0F766E" } },
+  "text":  { "link":    { "$type": "color", "$value": "#115E59" } }
 }
 ```
 

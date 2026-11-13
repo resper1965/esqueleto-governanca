@@ -85,10 +85,10 @@ identidade:                            # opcional; ver docs/identidade-visual.md
 | `modulos` | não | todos `false` (só o núcleo) | Seleção de normas e blocos |
 | `cargos` | ceo e responsavel_sgsi | papel acumulado pelo ceo, com aviso | Anexo de designações, papéis de todas as normas |
 | `instancias` | não | só comitê de riscos, trimestral | Governança e riscos |
-| `alcadas` | não | calibragem de origem | Governança, Fornecedores |
-| `risco` | não | escala de origem, apetite médio | Governança e riscos |
+| `alcadas` | não | calibragem de referência | Governança, Fornecedores |
+| `risco` | não | escala de referência, apetite médio | Governança e riscos |
 | `ferramentas` | não | "a definir" + ponto a decidir | Todas as normas |
-| `prazos` | não | calibragem de origem | Acesso, Desenvolvimento, Continuidade |
+| `prazos` | não | calibragem de referência | Acesso, Desenvolvimento, Continuidade |
 | `identidade` | não | padrão neutro | Gerador ([identidade visual](identidade-visual.md)) |
 
 ## Regras de validação previstas

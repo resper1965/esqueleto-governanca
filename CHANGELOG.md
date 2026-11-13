@@ -10,4 +10,5 @@ Cada versão diz o que muda **em cada norma**, para quem usa decidir o merge.
 - Especificação do esqueleto (`docs/especificacao.md`).
 - Documentação: arquitetura, implantação, entrevista, parâmetros, normas e cobertura do Anexo A, glossário.
 - Seção "Como usar" no README e guia de identidade visual (nível básico e design system por tokens).
+- Ferramenta genérica: sem marca, nomes ou referências a uma empresa específica.
 - Arquivos da comunidade: contribuição, segurança, modelos de issue e de PR.
