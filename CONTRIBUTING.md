@@ -33,6 +33,11 @@ flowchart LR
 | **minor** | Regra ou parâmetro novo, com padrão | Merge; novo item pode aparecer em Pontos a decidir |
 | **major** | Regra existente mudou, ou parâmetro novo sem padrão aceitável | Nova rodada parcial da entrevista |
 
+## Licença das contribuições
+
+Ao abrir uma PR você concorda que a contribuição seja distribuída nas mesmas licenças do repositório: CC BY 4.0
+para conteúdo e MIT para código.
+
 ## Estilo
 
 Português do Brasil, direto e técnico. Sem emoji, sem exclamação, sem superlativo. Conformidade sempre como "alinhada

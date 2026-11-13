@@ -9,7 +9,7 @@
   <img alt="ISO 31000" src="https://img.shields.io/badge/riscos-ISO%2031000-1E293B?style=flat-square">
   <img alt="LGPD" src="https://img.shields.io/badge/privacidade-LGPD-1E293B?style=flat-square">
   <img alt="Idioma" src="https://img.shields.io/badge/idioma-pt--BR-1E293B?style=flat-square">
-  <img alt="Uso restrito" src="https://img.shields.io/badge/licen%C3%A7a-uso%20restrito-475569?style=flat-square">
+  <img alt="Licença: CC BY 4.0 e MIT" src="https://img.shields.io/badge/licen%C3%A7a-CC%20BY%204.0%20%C2%B7%20MIT-475569?style=flat-square">
 </p>
 
 <p align="center">
@@ -173,6 +173,13 @@ O conteúdo nunca muda com o tema: só a aparência. Detalhes, tokens aceitos e 
 ## Perguntas frequentes
 
 <details>
+<summary><strong>Posso usar na minha empresa ou com meus clientes?</strong></summary>
+
+Sim, inclusive em consultoria paga. O conteúdo é CC BY 4.0 e o código é MIT: use, adapte e distribua citando a
+autoria. Detalhes em [LICENSE](LICENSE).
+</details>
+
+<details>
 <summary><strong>Isso certifica a empresa na ISO/IEC 27001?</strong></summary>
 
 Não. O esqueleto entrega a base documental e de decisão alinhada aos requisitos da norma. Certificação depende de
@@ -203,6 +210,6 @@ indicado. Melhoria que vale para todos vira PR no modelo.
 ---
 
 <p align="center">
-  <sub>Ferramenta genérica de programa de governança ·
-  <a href="CONTRIBUTING.md">Como contribuir</a> · <a href="SECURITY.md">Segurança</a> · <a href="LICENSE">Uso restrito</a></sub>
+  <sub>Uma contribuição de <strong>Ricardo Esper</strong> às empresas que buscam adequação ·
+  <a href="CONTRIBUTING.md">Como contribuir</a> · <a href="SECURITY.md">Segurança</a> · <a href="LICENSE">CC BY 4.0 · MIT</a></sub>
 </p>
