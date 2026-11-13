@@ -16,7 +16,8 @@
   <a href="#como-funciona">Como funciona</a> ·
   <a href="#o-que-sai-do-outro-lado">O que sai</a> ·
   <a href="#normas-e-módulos">Normas</a> ·
-  <a href="#implantação-em-cinco-passos">Implantação</a> ·
+  <a href="#como-usar">Como usar</a> ·
+  <a href="#sua-identidade-visual">Identidade visual</a> ·
   <a href="docs/">Documentação</a> ·
   <a href="#roteiro">Roteiro</a>
 </p>
@@ -88,26 +89,49 @@ flowchart LR
 | Módulo | Serviço ao cliente | Ativos e dados de clientes, acordo de segurança, notificação |
 | Módulo | Incidentes e continuidade | Resposta, comunicação, backup, RTO e RPO |
 
-## Implantação em cinco passos
+## Como usar
+
+Você não escreve norma nenhuma: responde perguntas e recebe os documentos prontos, com a sua marca.
+
+| Passo | Você faz | Você recebe |
+| --- | --- | --- |
+| **1. Criar** | Cria o repositório da sua empresa a partir deste modelo | Um repositório privado só seu |
+| **2. Responder** | Roda `/entrevista-governanca` no Claude Code e responde uma pergunta por vez | `config/empresa.yaml` preenchido e o registro das suas decisões |
+| **3. Aplicar a sua marca** | Coloca logotipo, cores e fontes em `config/` ([como](docs/identidade-visual.md)) | Documentos com a cara da sua empresa |
+| **4. Gerar e conferir** | `npm run gerar` e `npm run coesao` | PDF, Word e HTML de cada norma, e a lista do que ficou a decidir |
+| **5. Validar e aprovar** | Abre a PR; o consultor revisa e a direção aprova com o merge | A primeira emissão oficial |
+| **6. Manter** | Puxa as versões novas do modelo quando sair uma | Melhorias sem perder o que é seu |
 
 ```bash
-# 1. Nova empresa a partir do modelo
-gh repo create cliente/governanca --private --template resper1965/esqueleto-governanca
-
-# 2. Entrevista (skill do repositório, no Claude Code)
-/entrevista-governanca
-
-# 3. Gerar e conferir
+gh repo create minha-empresa/governanca --private --template resper1965/esqueleto-governanca
+cd governanca
+/entrevista-governanca                 # no Claude Code
 npm run gerar && npm run coesao
-
-# 4. Abrir a PR para o consultor validar as decisões
 gh pr create --title "Primeira emissão"
-
-# 5. Receber melhorias do modelo depois
-git fetch esqueleto && git merge esqueleto/main
 ```
 
-Passo a passo completo, com o papel do consultor e do cliente: [docs/implantacao.md](docs/implantacao.md).
+O que é seu e o que é do modelo:
+
+| Seu (edite à vontade) | Do modelo (não edite) |
+| --- | --- |
+| `config/` respostas, marca e tema | `normas/` texto das normas |
+| `acrescimos/` texto próprio por seção | `procedimentos/`, `modelos/`, `ferramentas/` |
+| `decisoes/` registro das decisões | |
+
+Passo a passo completo, com o papel do consultor e da empresa: [docs/implantacao.md](docs/implantacao.md).
+
+## Sua identidade visual
+
+Os documentos saem com a sua marca. Três níveis, escolha o que você já tem:
+
+| Nível | Você fornece | Resultado |
+| --- | --- | --- |
+| **Nenhum** | Nada | Padrão neutro, sóbrio, pronto para circular |
+| **Básico** | Logotipo, uma cor de destaque e as fontes, em `config/empresa.yaml` | Capa, títulos e destaques com a sua marca |
+| **Design system** | Seus tokens (`config/tema/tokens.json` no formato W3C ou `config/tema/tema.css`) e, se quiser, um Word modelo | Cores, tipografia, espaçamentos, tabelas e figuras do seu design system |
+
+O conteúdo nunca muda com o tema: só a aparência. Detalhes, tokens aceitos e exemplos em
+[docs/identidade-visual.md](docs/identidade-visual.md).
 
 ## Princípios
 
@@ -129,6 +153,7 @@ Passo a passo completo, com o papel do consultor e do cliente: [docs/implantacao
 | [Implantação](docs/implantacao.md) | Do clone à primeira emissão, e a manutenção |
 | [Entrevista](docs/entrevista.md) | Roteiro, ordem das perguntas e como as respostas são gravadas |
 | [Parâmetros](docs/parametros.md) | Referência do `config/empresa.yaml` |
+| [Identidade visual](docs/identidade-visual.md) | Como aplicar a sua marca ou o seu design system |
 | [Normas](docs/normas.md) | Catálogo, módulos e cobertura do Anexo A |
 | [Glossário](docs/glossario.md) | Vocabulário único e onde mora cada regra |
 

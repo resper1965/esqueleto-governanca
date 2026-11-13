@@ -85,7 +85,8 @@ Skill `entrevista-governanca` no repositório, conduzida com o cliente (ou pelo 
 ## 4. Emissão e manutenção
 
 - `ferramentas/gerar` emite HTML A4, PDF e Word com capa, controle de quebras, figuras SVG e a identidade visual do
-  cliente (padrão neutro quando não informada).
+  cliente (padrão neutro quando não informada; tema completo por tokens em `config/tema/`, ver
+  [identidade-visual.md](identidade-visual.md)).
 - O modelo tem versão (SemVer). O cliente recebe melhorias com `git merge esqueleto/main`; como o específico fica em
   `config/` e `acrescimos/`, o conflito é raro. Notas de versão dizem o que muda em cada norma.
 - Revisão anual e aprovação seguem a norma de governança do próprio cliente (aprovação pela direção, por PR).

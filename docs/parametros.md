@@ -69,11 +69,12 @@ prazos:
   notificacao_incidente_horas: 24
   retencao_logs_meses: 12
 
-identidade:
+identidade:                            # opcional; ver docs/identidade-visual.md
   logotipo: config/logotipo.svg
   cor_destaque: "#2563EB"
   fonte_titulos: Montserrat
   fonte_texto: Inter
+  # tema: config/tema/tokens.json      # design system completo, no lugar dos campos acima
 ```
 
 ## Grupos
@@ -88,7 +89,7 @@ identidade:
 | `risco` | não | escala de origem, apetite médio | Governança e riscos |
 | `ferramentas` | não | "a definir" + ponto a decidir | Todas as normas |
 | `prazos` | não | calibragem de origem | Acesso, Desenvolvimento, Continuidade |
-| `identidade` | não | padrão neutro | Gerador |
+| `identidade` | não | padrão neutro | Gerador ([identidade visual](identidade-visual.md)) |
 
 ## Regras de validação previstas
 
